@@ -54,14 +54,14 @@
             translate += 100;
             if(translate > 0)
                 translate = 0;
-            carousel_content.style.transform = translate`( + translate + %)`;
+            carousel_content.style.transform = `translate(` + translate + `%)`;
         }
 
         next.onclick = () =>{
             translate -= 100;
             if(translate < -200)
                 translate = -200;
-            carousel_content.style.transform = translate`( + translate + %)`;
+            carousel_content.style.transform = `translate(` + translate + `%)`;
         }
 
     </script>
