@@ -12,7 +12,7 @@
 }
 
 .slider-item{
-    width: 100%;
+    /* width: 100%; */
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -46,7 +46,8 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding-left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .intro .txt{
     margin-top: 100px;
@@ -111,7 +112,8 @@
     display: block;
     flex-direction: column;
     gap: 20px;
-    padding-left: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .intro .txt{
     margin-top: 100px;
