@@ -107,7 +107,6 @@ nav {
     }
 
     .nav-link[aria-current="page"] {
-        background-color: red;
         text-decoration: none;
     }
 }
