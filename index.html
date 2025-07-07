@@ -7,16 +7,62 @@
     <script src="index.js"></script>
     <link rel="shortcut icon" href="images/dark-logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body onload="fetchHeaderFooter()">
     <!--header-->
     <div id="header"></div>
 
 
-    <!--                   Écrivez ici                   -->
-    
+<!--  Carousel d'images -->
 
-    <!--footer-->
+        <section class="carousel">
+            <div class="images">
+                <img src="https://i.pinimg.com/736x/f2/3a/94/f23a94f9996a83f9b166e0d086cf36b0.jpg" alt="" class="slider-item">
+                <img src="https://i.pinimg.com/736x/60/8e/b1/608eb18e842a91326a05974b6d420690.jpg" alt="" class="slider-item">
+                <img src="https://i.pinimg.com/736x/16/80/db/1680db2f9ab524c385b16a0ac95e5988.jpg" alt="" class="slider-item">
+            </div>
+            <div class="fleches">
+                <span><i id="gauche" class="fa-solid fa-angle-left fa-2xl"></i></span>
+                <span><i id="droite"class="fa-solid fa-angle-right fa-2xl"></i></span>
+            </div>
+            <div class="slogan">
+                <p>Conduis ton avenir avec Auto-Ecole Nico !</p>
+            </div>
+        </section>
+
+        <div class="intro">
+            <p class="txt">
+                Bienvenue chez Auto-École Nico !Prêt à prendre le volant ? À l'Auto-École Nico, nous vous accompagnons avec passion et professionnalisme vers l'obtention de votre permis de conduire. Que vous soyez débutant ou en quête de perfectionnement,
+                notre équipe dévouée vous propose des cours adaptés, un suivi personnalisé et une méthode éprouvée pour réussir votre permis en toute confiance. Rejoignez-nous et démarrez votre aventure sur la route avec sérénité !
+            </p>
+            <img src="https://i.pinimg.com/736x/db/9d/6a/db9d6ae22513bc636ec064d8e3019393.jpg" alt="" class="car"> 
+
+        </div>
+
+
+        <!-- Carousel javascript -->
+    <script>
+        const carousel_content = document.querySelector('.images');
+        const prev = document.getElementById('gauche');
+        const next = document.getElementById('droite');
+        let translate = 0;
+
+        prev.onclick = ()=>{
+            translate += 100;
+            if(translate > 0)
+                translate = 0;
+            carousel_content.style.transform = `translate(` + translate + `%)`;
+        }
+
+        next.onclick = () =>{
+            translate -= 100;
+            if(translate < -200)
+                translate = -200;
+            carousel_content.style.transform = `translate(` + translate + `%)`;
+        }
+
+    </script>
     <div id="footer"></div>
 </body>
 </html>
