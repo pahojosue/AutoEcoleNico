@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSCRIPTION</title>
-    <link rel="shortcut icon" href="images/dark-logo.jpg" type="image/x-icon">
+    <title>AUTO ÉCOLE NICO</title>
+    <link rel="shortcut icon" href="images/light-logo.jpg" type="image/x-icon">
     <script src="index.js"></script>
     <link rel="stylesheet" href="styles/inscriptionStyle.css">
 </head>
-<body onload="fetchHeaderFooter()">
+<body onload="fetchHeaderFooter(); fetchPermis()">
     <!--header-->
     <div id="header"></div>
 
@@ -50,24 +50,29 @@
                 <option value="B">Catégorie B</option>
             </select>
 
-            <!--Type de formation-->
+            <!--Type de permis-->
             <label for="type_de_formation">Sélectionnez le type de permis</label>
-            <select name="type" id="type_de_formation">
-                <option value="">Permis Express</option>
-                <option value="">Permis Classique</option>
-                <option value="">Permis Turbo</option>
-                <option value="">Permis Campus</option>
+            <select name="type" id="type_de_formation" onchange="changePrix()">
+                <option value=""></option>
+                <option value="Permis Express">Permis Express</option>
+                <option value="Permis Classique">Permis Classique</option>
+                <option value="Permis Turbo">Permis Turbo</option>
+                <option value="Permis Campus">Permis Campus</option>
             </select>
+
+            <!--Prix-->
+            <label for="prix">Prix</label>
+            <input type="text" id="prix" disabled>
 
             <!--Permis Valide-->
             <label for="permis_valide">Avez-vous un permis de conduire valide?</label>
             <div class="permis_valid" id="permis_valide">
                 <div class="oui">
-                    <input type="checkbox" name="permis_valide" id="" class="check">
+                    <input type="radio" name="permis_valide" id="" class="check">
                     <p>Oui</p>
                 </div>
                 <div class="non">
-                    <input type="checkbox" name="permis_valide" id="" class="check">
+                    <input type="radio" name="permis_valide" id="" class="check">
                     <p>Non</p>
                 </div>
             </div>
@@ -76,11 +81,11 @@
             <label for="lecons_auparavant">Avez-vous déjà suivi des leçons de conduite auparavant?</label>
             <div class="lecons_auparavan" id="lecons_auparavant">
                 <div class="oui">
-                    <input type="checkbox" name="lecons_auparavant" id="" class="check">
+                    <input type="radio" name="lecons_auparavant" id="" class="check">
                     <p>Oui</p>
                 </div>
                 <div class="non">
-                    <input type="checkbox" name="lecons_auparavant" id="" class="check">
+                    <input type="radio" name="lecons_auparavant" id="" class="check">
                     <p>Non</p>
                 </div>
             </div>
