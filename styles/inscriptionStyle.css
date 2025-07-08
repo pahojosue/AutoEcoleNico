@@ -4,6 +4,14 @@
     margin-bottom: 20px;
 }
 
+#header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 .formulaire > h4 {
     text-align: center;
     margin-bottom: 10px;
@@ -31,7 +39,7 @@ input {
     height: 25px;
     padding: 5px 0px 5px 19px;
     border: 1px solid rgb(6, 35, 56);
-    border-radius: 2%;
+    border-radius: 8px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -43,12 +51,16 @@ input:disabled {
 }
 
 select {
-    height: 30px;
+    height: 45px;
     padding: 5px 0px 5px 19px;
     border: 1px solid rgb(6, 35, 56);
-    border-radius: 2%;
+    border-radius: 8px;
     margin-bottom: 20px;
     margin-top: 10px;
+}
+option {
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 .nom_prenom {
@@ -75,7 +87,7 @@ select {
     width: 50%;
     column-gap: 10px;
     border: 1px solid rgb(6, 35, 56);
-    border-radius: 3%;
+    border-radius: 8px;
 }
 
 .lecons_auparavan {
@@ -100,7 +112,7 @@ input[type="radio"]:checked {
 .confirm {
     padding: 15px 50px;
     background-color: white;
-    border-radius: 3%;
+    border-radius: 8px;
     font-size: 1.1rem;
     font-weight: bold;
     color: white;
@@ -127,6 +139,18 @@ h3 {
     .confirm {
         width: 100%;
         padding: 5px 1px 5px 1px;
+    }
+
+    .oui, .non {
+        border: none;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+    option {
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -164,6 +188,10 @@ h3 {
     .formulaire > h4 {
         text-align: center;
         margin-bottom: 10px;
+        font-size: 0.8rem;
+    }
+
+    h3 {
         font-size: 0.8rem;
     }
 }
