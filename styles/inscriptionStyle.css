@@ -97,50 +97,69 @@ input[type="radio"]:checked {
     background-color: rgb(6, 35, 56);
 }
 
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.cancel, .confirm {
+.confirm {
     padding: 15px 50px;
     background-color: white;
     border-radius: 3%;
     font-size: 1.1rem;
     font-weight: bold;
     color: white;
-}
-
-.cancel {
     background-color: rgb(227, 7, 19);
     border: 1px solid rgb(227, 7, 19);
+    width: 100%;
 }
 
-.confirm {
-    background-color: rgb(6, 35, 56);
-    border: 1px solid rgb(6, 35, 56);
+.cat {
+    display: flex;
+    flex-direction: column;
 }
+.permis {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: rgb(227, 7, 19);
+}
+
 
 @media screen and (max-width: 440px) {
-    .buttons {
-        display: flex;
-        justify-content: none;
-        flex-wrap: nowrap;
-        column-gap: 20px;
-    }
-
-    .cancel, .confirm {
-        width: 50%;
-        padding: 2px 1px 1px 1px;
+    .confirm {
+        width: 100%;
+        padding: 5px 1px 5px 1px;
     }
 }
 
 @media screen and (max-width: 426px) {
+    h3 {
+        color: rgb(227, 7, 19);
+    }
+    .formulaire {
+        outline: 2px solid red;
+    }
     .formulaire > h4 {
         text-align: center;
         margin-bottom: 10px;
         font-size: 1rem;
+    }
+
+    .catPermis {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 10px;
+    }
+    .cat {
+        width: 50%;
+    }
+    .cat select {
+        width: 100%;
+    }
+    .permis {
+        width: 50%;
+    }
+    .permis select {
+        width: 100%;
     }
 }
 
