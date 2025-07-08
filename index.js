@@ -1,3 +1,5 @@
+var typePermis = "";
+
 let menuOpen = false;
 function openClose() {
     const hamburger = document.querySelector('.hamburger');
@@ -13,10 +15,6 @@ function openClose() {
         menuOpen = false;
         hamburger.style.transform = "rotate(180deg)";
     }
-}
-
-function openService() {
-
 }
 
 function fetchHeaderFooter() {
@@ -39,6 +37,40 @@ function fetchHeaderFooter() {
     });
 }
 
-function fetchFooter() {
+function setValue(prix, type) {
+    sessionStorage.setItem('type', type);
+    sessionStorage.setItem('prix', prix);
+}
 
+function fetchPermis() {
+    var permisType = document.getElementById('type_de_formation');
+    permisType.value = sessionStorage.getItem('type');
+
+    var prixElement = document.getElementById('prix');
+    prixElement.value = sessionStorage.getItem('prix');
+
+    sessionStorage.setItem('type', "");
+    sessionStorage.setItem('prix', "");
+}
+
+function changePrix() {
+    var prixElement = document.getElementById('prix');
+    var typeElement = document.getElementById('type_de_formation');
+    var typeValue = typeElement.value;
+
+    if (typeValue === "Permis Express") {
+        prixElement.value = '65 000 FCFA';
+    }
+    else if (typeValue === "Permis Classique") {
+        prixElement.value = '230 000 FCFA';
+    }
+    else if (typeValue === "Permis Turbo") {
+        prixElement.value = '280 000 FCFA';
+    }
+    else if (typeValue === "Permis Campus") {
+        prixElement.value = '170 000 FCFA';
+    }
+    else {
+        prixElement.value = '';
+    }
 }

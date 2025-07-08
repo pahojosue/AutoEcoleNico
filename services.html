@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="images/light-logo.jpg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AUTO ÉCOLE NICO</title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="styles/servicesStyle.css">
 </head>
 <body onload="fetchHeaderFooter()">
     <!--header-->
     <div id="header"></div>
-
-
-    <!--                   Écrivez ici                   -->
-    
-    
-    <!--footer-->
+        <section>
+            <div class="div-p">
+                <p>VOICI NOS DIFFERENTS PACKS DE SERVICE</p>
+            </div>
+            <div class="div-section">
+                <div class="div-soussection">
+                    <h3>Permis Express</h3>
+                    <div>
+                        <ul>
+                            <li>5 heures de conduite</li>
+                            <li>acces au code en ligne pendant 1 mois</li>
+                            <li>evaluation de depart gratuite</li>
+                        </ul>
+                    </div>
+                    <h5>65 000 FCFA</h5>
+                    <button onclick="setValue('65 000 XAF', 'Permis Express')"><a href="inscription.html">souscrire</a></button>
+                </div>
+                <div class="div-soussection">
+                    <h3>Permis Classique</h3>
+                    <div>
+                        <ul>
+                            <li>20 heures de conduit</li>
+                            <li>cours de code en salle + code en ligne (3 mois)</li>
+                            <li>1 accompagnement à l’examen pratique</li>
+                            <li>suivi pédagogique personnalisé</li>
+                        </ul>
+                    </div>
+                    <h5>230 000 FCFA</h5>
+                    <button onclick="setValue('230 000 FCFA', 'Permis Classique')"><a href="inscription.html">souscrire</a></button>
+                </div>
+                <div class="div-soussection">
+                    <h3>Permis Turbo</h3>
+                    <div>
+                        <ul>
+                            <li>20 heures de conduites en 10 jours</li>
+                            <li>accès code illimité (en ligne + en salle) pendant 2 mois</li>
+                            <li>2 accompagnements à l’examen</li>
+                            <li>prise de rendez-vous prioritaire</li>
+                        </ul>
+                    </div>
+                    <h5>280 000 FCFA</h5>
+                    <button onclick="setValue('280 000 FCFA', 'Permis Turbo')"><a href="inscription.html">souscrire</a></button>
+                </div>
+                <div class="div-soussection">
+                    <h3>Permis Campus</h3>
+                    <div>
+                        <ul>
+                            <li>15 heures de conduite</li>
+                            <li>code en ligne offert (2 mois)</li>
+                            <li>paiement échelonné possible</li>
+                            <li>réductions sur présentation de la carte étudiante</li>
+                        </ul>
+                    </div>
+                    <h5>170 000 FCFA</h5>
+                    <button onclick="setValue('170 000 FCFA', 'Permis Campus')"><a href="inscription.html">souscrire</a></button>
+                </div>
+            </div>
+        </section>        
     <div id="footer"></div>
 </body>
 </html>
