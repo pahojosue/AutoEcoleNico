@@ -4,6 +4,14 @@
     margin-bottom: 20px;
 }
 
+#header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 .formulaire > h4 {
     text-align: center;
     margin-bottom: 10px;
@@ -31,18 +39,28 @@ input {
     height: 25px;
     padding: 5px 0px 5px 19px;
     border: 1px solid rgb(6, 35, 56);
-    border-radius: 2%;
+    border-radius: 8px;
     margin-bottom: 20px;
     margin-top: 10px;
 }
 
+input:disabled {
+    background-color: rgb(185, 181, 181);
+    color: rgb(6, 35, 56);
+    font-weight: bold;
+}
+
 select {
-    height: 30px;
+    height: 45px;
     padding: 5px 0px 5px 19px;
     border: 1px solid rgb(6, 35, 56);
-    border-radius: 2%;
+    border-radius: 8px;
     margin-bottom: 20px;
     margin-top: 10px;
+}
+option {
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 .nom_prenom {
@@ -69,7 +87,7 @@ select {
     width: 50%;
     column-gap: 10px;
     border: 1px solid rgb(6, 35, 56);
-    border-radius: 3%;
+    border-radius: 8px;
 }
 
 .lecons_auparavan {
@@ -80,52 +98,127 @@ select {
     margin-bottom: 20px;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
     appearance: none;
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
 
-input[type="checkbox"]:checked {
+input[type="radio"]:checked {
     background-color: rgb(6, 35, 56);
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.cancel, .confirm {
-    padding: 15px 50px;
-    background-color: white;
-    border-radius: 3%;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: white;
-}
-
-.cancel {
-    background-color: rgb(227, 7, 19);
-    border: 1px solid rgb(227, 7, 19);
 }
 
 .confirm {
-    background-color: rgb(6, 35, 56);
-    border: 1px solid rgb(6, 35, 56);
+    padding: 15px 50px;
+    background-color: white;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(227, 7, 19);
+    border: 1px solid rgb(227, 7, 19);
+    width: 100%;
 }
 
+.cat {
+    display: flex;
+    flex-direction: column;
+}
+.permis {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: rgb(227, 7, 19);
+}
+
+
 @media screen and (max-width: 440px) {
-    .buttons {
-        display: flex;
-        justify-content: none;
-        flex-wrap: nowrap;
-        column-gap: 20px;
+    .confirm {
+        width: 100%;
+        padding: 5px 1px 5px 1px;
     }
 
-    .cancel, .confirm {
+    .oui, .non {
+        border: none;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+    option {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    h3 {
+        color: rgb(227, 7, 19);
+    }
+    .formulaire > h4 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .catPermis {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 10px;
+    }
+    .cat {
         width: 50%;
-        padding: 2px 1px 1px 1px;
+    }
+    .cat select {
+        width: 100%;
+    }
+    .permis {
+        width: 50%;
+    }
+    .permis select {
+        width: 100%;
+    }
+
+    select {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .formulaire > h4 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 0.8rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 276px) {
+    .catPermis label {
+        font-size: 0.7rem;
+    }
+    .permis select {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 221px) {
+    form {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .permis_valid {
+        column-gap: 0;
+    }
+    .lecons_auparavan {
+        column-gap: 0;
     }
 }
