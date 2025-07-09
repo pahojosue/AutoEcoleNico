@@ -37,10 +37,10 @@ function fetchHeaderFooter() {
     });
 }
 
-function setValue(prix, type) {
+function setValue(prix, type, image) {
     sessionStorage.setItem('type', type);
     sessionStorage.setItem('prix', prix);
-    // sessionStorage.setItem('image', "notes.jpg");
+    sessionStorage.setItem('image', image);
 }
 
 function fetchPermis() {
@@ -50,8 +50,8 @@ function fetchPermis() {
     var prixElement = document.getElementById('prix');
     prixElement.value = sessionStorage.getItem('prix');
 
-    // var typeImage = document.getElementById('imageType');
-    // typeImage.src = sessionStorage.getItem('image');
+    var typeImage = document.getElementById('imageType');
+    typeImage.src = sessionStorage.getItem('image');
 
     sessionStorage.clear();
 }
