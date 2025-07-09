@@ -40,6 +40,7 @@ function fetchHeaderFooter() {
 function setValue(prix, type) {
     sessionStorage.setItem('type', type);
     sessionStorage.setItem('prix', prix);
+    // sessionStorage.setItem('image', "notes.jpg");
 }
 
 function fetchPermis() {
@@ -49,8 +50,10 @@ function fetchPermis() {
     var prixElement = document.getElementById('prix');
     prixElement.value = sessionStorage.getItem('prix');
 
-    sessionStorage.setItem('type', "");
-    sessionStorage.setItem('prix', "");
+    // var typeImage = document.getElementById('imageType');
+    // typeImage.src = sessionStorage.getItem('image');
+
+    sessionStorage.clear();
 }
 
 function changePrix() {

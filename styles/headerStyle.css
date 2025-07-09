@@ -120,3 +120,9 @@ nav {
         font-size: 0.9rem;
     }
 }
+
+@media screen and (max-width: 253px) {
+    nav {
+        flex-direction: column;
+    }
+}

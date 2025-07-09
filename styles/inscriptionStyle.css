@@ -182,6 +182,10 @@ h3 {
     .permis select {
         width: 100%;
     }
+
+    select {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -193,5 +197,28 @@ h3 {
 
     h3 {
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 276px) {
+    .catPermis label {
+        font-size: 0.7rem;
+    }
+    .permis select {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 221px) {
+    form {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .permis_valid {
+        column-gap: 0;
+    }
+    .lecons_auparavan {
+        column-gap: 0;
     }
 }
