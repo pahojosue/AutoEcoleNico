@@ -49,3 +49,24 @@ footer {
     text-align: center;
   }
 }
+.socials {
+  list-style: none;
+  padding-left: 0;
+}
+
+.socials i {
+  display: inline-block;
+  justify-content: center;
+  gap: 25%;
+  margin-bottom: 10px;
+  margin-left: 4%;
+  font-size: 16px;
+  font-size: 20px;
+  color: #0077ff;
+  transition: transform 0.3s ease;
+}
+.socials i:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
