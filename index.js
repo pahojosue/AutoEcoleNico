@@ -3,15 +3,15 @@ var typePermis = "";
 let menuOpen = false;
 function openClose() {
     const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    const sidebar = document.querySelector('.sidebar');
 
     if (menuOpen == false) {
-        navLinks.style.display = "flex";
+        sidebar.style.display = "flex";
         menuOpen = true;
         hamburger.style.transform = "rotate(90deg)";
     }
     else if (menuOpen == true) {
-        navLinks.style.display = "none";
+        sidebar.style.display = "none";
         menuOpen = false;
         hamburger.style.transform = "rotate(180deg)";
     }
@@ -24,6 +24,12 @@ function fetchHeaderFooter() {
             document.getElementById('header').innerHTML = data;
 
             document.querySelectorAll('.nav-link').forEach(link => {
+                if(link.href === window.location.href) {
+                    link.setAttribute('aria-current', 'page');
+                }
+            });
+
+            document.querySelectorAll('.sidebar').forEach(link => {
                 if(link.href === window.location.href) {
                     link.setAttribute('aria-current', 'page');
                 }
