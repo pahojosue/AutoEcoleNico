@@ -134,6 +134,13 @@ h3 {
     color: rgb(227, 7, 19);
 }
 
+#imageType {
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+
 
 @media screen and (max-width: 440px) {
     .confirm {

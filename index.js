@@ -59,21 +59,27 @@ function fetchPermis() {
 function changePrix() {
     var prixElement = document.getElementById('prix');
     var typeElement = document.getElementById('type_de_formation');
+    var typeImage = document.getElementById('imageType');
     var typeValue = typeElement.value;
 
     if (typeValue === "Permis Express") {
         prixElement.value = '65 000 FCFA';
+        typeImage.src = 'images/permis express.jpg';
     }
     else if (typeValue === "Permis Classique") {
         prixElement.value = '230 000 FCFA';
+        typeImage.src = 'images/permis classique.jpg';
     }
     else if (typeValue === "Permis Turbo") {
         prixElement.value = '280 000 FCFA';
+        typeImage.src = 'images/permis turbo.JPG';
     }
     else if (typeValue === "Permis Campus") {
         prixElement.value = '170 000 FCFA';
+        typeImage.src = 'images/permis campus.jpg';
     }
     else {
         prixElement.value = '';
+        typeImage.src = '';
     }
 }
