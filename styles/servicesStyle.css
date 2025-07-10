@@ -1,3 +1,40 @@
+section {
+    padding: 1%;
+    padding-top: 0;
+}
+.banniere {
+    width: 100%;
+    height: 450px;
+}
+.img-banniere {
+    width: 100%;
+    height: 100%;
+}
+/*---animation du bouton contacter---*/
+@keyframes vibration {
+    0% { transform: translate(0); }
+    25% { transform: translate(1px, -1px); }
+    50% { transform: translate(-1px, 1px); }
+    75% { transform: translate(1px, 1px); }
+    100% { transform: translate(0); }
+}
+.contacter {
+    background-color: #fff;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    width: 30%;
+    height: 7%;
+    font-size: 100%;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+    animation: vibration 0.3s infinite;
+    color: rgb(6, 35, 56);
+}
+.contacter:hover {
+    color: #ccc;
+    animation: none;
+}
 a {
     text-decoration: none;
 }
@@ -10,7 +47,16 @@ a {
 }*/
 ul {
     text-align: left;
-    
+    list-style: none;
+    padding: 1%;
+
+}
+li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 .div-p p{
     display: flex;
@@ -68,6 +114,7 @@ ul {
     }        
 }
 button {
+    padding: 10px 20px;
     background-color: #ccc;
     color: rgb(6, 35, 56);
     font-weight: bold;
@@ -78,4 +125,60 @@ button {
 }
 button:hover {
     background-color: rgb(227, 7, 19);
+    color: #ccc;
+}
+/*---form---*/
+.div-form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.button-form {
+    background-color: #4CAF50; 
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-form:hover {
+    background-color: #45a049; 
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: 20px; /* Taille de l’icône */
+  line-height: 1; /* Alignement vertical */
+  margin-top: 2px; /* Ajuste légèrement la position vers le bas si nécessaire */
+  flex-shrink: 0; /* Empêche l’icône de se réduire */
 }
