@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 section {
     padding: 1%;
     padding-top: 0;
@@ -141,6 +144,7 @@ button:hover {
 form {
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 100px; /* Ajoute de l’espace en haut après scroll */
 }
 
 label {
