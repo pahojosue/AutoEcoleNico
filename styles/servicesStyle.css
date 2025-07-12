@@ -62,7 +62,7 @@ ul {
     padding: 1%;
 
 }
-li {
+.div-soussection li {
     display: flex;
     align-items: flex-start;
     gap: 10px;
@@ -221,7 +221,7 @@ input, textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 1001;
 }
 
 .hidden {
