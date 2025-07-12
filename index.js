@@ -29,6 +29,21 @@ function fetchHeaderFooter() {
                 }
             });
 
+            if (!document.body.classList.contains("scroll-effect-page")) {
+                var nav = document.getElementById('navbar');
+                var li = nav.querySelectorAll('.nav-link');
+                nav.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
+                // lin.style.backgroundColor = "rgb(6, 35, 56)";
+                li.forEach(el => {
+                    el.style.color="black";
+                });
+
+                var hamb = document.querySelectorAll('.bar');
+                hamb.forEach(el => {
+                    el.style.backgroundColor = "black";
+                });
+            }
+
             document.querySelectorAll('.sidebar').forEach(link => {
                 if(link.href === window.location.href) {
                     link.setAttribute('aria-current', 'page');
@@ -89,3 +104,14 @@ function changePrix() {
         typeImage.src = '';
     }
 }
+
+window.addEventListener("scroll", function () {
+    if (!document.body.classList.contains("scroll-effect-page")) return;
+    const navbar = document.getElementById("navbar");
+
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});

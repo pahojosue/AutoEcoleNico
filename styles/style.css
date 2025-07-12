@@ -1,3 +1,11 @@
+#header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 .carousel{
     position: relative;
     overflow: hidden;
@@ -13,7 +21,9 @@
 
 .carousel button{
     position: absolute;
-    margin: 0 40px;
+    /* margin: 0 40px; */
+    top: 70%;
+    left: 40%;
     border-radius: 20px;
     bottom: 30px;
     background: red;
@@ -66,7 +76,9 @@
     position: absolute;
     width: 100%;
     top: 300px;
-    padding-left: 300px;
+    /* padding-left: 20%;
+    padding-right: 20%; */
+    text-align: center;
     color: #fff;
     font-size: 2rem;
     font-weight: bold;
@@ -183,12 +195,12 @@
 
 .slogan{
     position: absolute;
-    width: 75%;
+    width: 100%;
     top: 50%;
-    padding-left: 15%;
+    /* padding-left: 15%; */
     text-align: center;
     color: #fff;
-    font-size: 100%;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -200,7 +212,8 @@
     position: absolute;
     margin: 0 40px;
     border-radius: 20px;
-    bottom: 30px;
+    /* bottom: 30px; */
+    top: 65%;
     background: red;
     height: 30px;
     width: 90px;
@@ -220,4 +233,26 @@
 }
 
 
+}
+
+@media screen and (max-width: 490px) {
+    .slogan {
+        
+        padding-right: 10px;
+    }
+
+    .carousel button {
+        top: 70%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .carousel button {
+        top: 80%;
+        left: 30%;
+    }
+
+    .slogan {
+        font-size: 1rem;
+    }
 }

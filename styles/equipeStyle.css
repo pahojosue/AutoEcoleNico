@@ -1,0 +1,105 @@
+#header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.indication {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nom {
+    margin-bottom: 3%;
+}
+
+.place {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.presentation {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px); /* 4 per row */
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 per row */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 per row */
+    }
+
+    .indication {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .indication {
+        left: 30%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* 1 per row */
+    }
+
+    .indication {
+        font-size: 1rem;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .indication {
+        font-size: 0.8rem;
+    }
+}
