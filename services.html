@@ -20,26 +20,36 @@
             <div class="div-p">
                 <p>VOICI NOS DIFFERENTS PACKS DE SERVICE</p>
             </div>
+
+
             <div class="div-section">
                 <div class="div-soussection">
                     <h3>Permis Express</h3>
                     <div class="div-image">
-                        <img src="images/permis express.jpg" alt="ici c'est le pack express">
+                        <img src="images/permis express - Copie.jpg" alt="ici c'est le pack express">
                     </div>
                     <div>
                         <ul>
                             <li><span class="material-symbols-outlined">arrow_right</span>5 heures de conduite</li>
                             <li><span class="material-symbols-outlined">arrow_right</span>acces au code en ligne pendant 1 mois</li>
+                            <li><span class="material-symbols-outlined">arrow_right</span>1 accompagnement à l'examen pratique</li>
                             <li><span class="material-symbols-outlined">arrow_right</span>evaluation de depart gratuite</li>
                         </ul>
                     </div>
                     <h5>65 000 FCFA</h5>
+                    <div class="div-lire"><a href="javascript:void(0);" onclick="openModal(
+                        'Permis Express',
+                        'images/permis express - Copie.jpg',
+                        `Le pack Permis Express est idéal pour les personnes pressées de démarrer la conduite. Il propose 5 heures de conduite pour vous initier rapidement, un accès au code en ligne pendant un mois pour étudier à votre rythme, une évaluation de départ gratuite pour mesurer votre niveau, et un accompagnement à l’examen pratique. Une formule rapide et efficace.`)">lire plus</a>
+                    </div>
                     <a href="inscription.html"><button onclick="setValue('65 000 XAF', 'Permis Express', 'images/permis express.jpg')">souscrire</button></a>
                 </div>
+
+
                 <div class="div-soussection">
                     <h3>Permis Classique</h3>
                     <div class="div-image">
-                        <img src="images/permis classique.jpg" alt="ici c'est le pack Classique">
+                        <img src="images/permis classique - Copie.png" alt="ici c'est le pack Classique">
                     </div>
                     <div>
                         <ul>
@@ -50,12 +60,20 @@
                         </ul>
                     </div>
                     <h5>230 000 FCFA</h5>
+                    <div class="div-lire"><a href="javascript:void(0);" onclick="openModal(
+                        'Permis Classique',
+                        'images/permis classique - Copie.png',
+                        `Le pack Permis Classique s’adresse à ceux qui veulent une formation complète et équilibrée. Il inclut 20 heures de conduite, des cours de code en salle combinés à un accès en ligne durant 3 mois, un accompagnement personnalisé pour l’examen, ainsi qu’un suivi pédagogique pour garantir votre progression. C’est le choix parfait pour une préparation solide.`)">lire plus</a>
+                    </div>
                     <a href="inscription.html"><button onclick="setValue('230 000 FCFA', 'Permis Classique', 'images/permis classique.jpg')">souscrire</button></a>
                 </div>
+
+
+
                 <div class="div-soussection">
                     <h3>Permis Turbo</h3>
                     <div class="div-image">
-                        <img src="images/permis turbo.JPG" alt="ici c'est le pack turbo">
+                        <img src="images/permis turbo - Copie.JPG" alt="ici c'est le pack turbo">
                     </div>
                     <div>
                         <ul>
@@ -66,12 +84,20 @@
                         </ul>
                     </div>
                     <h5>280 000 FCFA</h5>
+                    <div class="div-lire"><a href="javascript:void(0);" onclick="openModal(
+                        'Permis Turbo',
+                        'images/permis turbo - Copie.JPG',
+                        `Le pack Permis Turbo est conçu pour ceux qui veulent obtenir leur permis en un temps record. Il comprend 20 heures de conduite réparties sur seulement 10 jours, un accès illimité au code (en ligne et en salle) pendant deux mois, deux accompagnements à l’examen, et un service de rendez-vous prioritaire. Idéal pour les plus motivés !`)">lire plus</a>
+                    </div>
                     <a href="inscription.html"><button onclick="setValue('280 000 FCFA', 'Permis Turbo', 'images/permis turbo.JPG')">souscrire</button></a>
                 </div>
+
+
+
                 <div class="div-soussection">
                     <h3>Permis Campus</h3>
                     <div class="div-image">
-                        <img src="images/permis campus.jpg" alt="ici c'est le pack campus">
+                        <img src="images/permis campus - Copie.jpg" alt="ici c'est le pack campus">
                     </div>
                     <div>
                         <ul>
@@ -82,6 +108,11 @@
                         </ul>
                     </div>
                     <h5>170 000 FCFA</h5>
+                    <div class="div-lire"><a href="javascript:void(0);" onclick="openModal(
+                        'Permis Campus',
+                        'images/permis campus - Copie.jpg',
+                        `Le pack Permis Campus est spécialement pensé pour les étudiants. Il offre 15 heures de conduite, 2 mois d’accès au code en ligne offerts, des facilités de paiement échelonné et des réductions pour les détenteurs de carte étudiante. Une formule économique et flexible pour réussir sans stress.`)">lire plus</a>
+                    </div>
                     <a href="inscription.html"><button onclick="setValue('170 000 FCFA', 'Permis Campus', 'images/permis campus.jpg')">souscrire</button></a>
                 </div>
             </div>
@@ -104,5 +135,34 @@
             </div>
         </section>        
     <div id="footer"></div>
+
+
+        <!-- Fenêtre modale -->
+    <div id="overlay" class="overlay hidden">
+    <div class="modal">
+        <span class="close-button" onclick="closeModal()">✖</span>
+        <img id="modal-image" src="" alt="Image pack" />
+        <div class="modal-content">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        function openModal(title, imagePath, description) {
+            document.getElementById("modal-title").textContent = title;
+            document.getElementById("modal-image").src = imagePath;
+            document.getElementById("modal-description").textContent = description;
+
+            document.getElementById("overlay").classList.remove("hidden");
+    }
+
+        function closeModal() {
+        document.getElementById("overlay").classList.add("hidden");
+        }
+
+    </script>
 </body>
 </html>

@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 section {
-    padding: 1%;
+    padding: 0;
     padding-top: 0;
 }
 .banniere {
@@ -98,6 +98,17 @@ li {
     width: 35%;
     margin-bottom: 1px;
 }
+.div-lire {
+    padding-bottom: 4%;
+    transition: transform 0.3s ease;
+}
+.div-lire a {
+    color: rgb(235, 18, 29);
+    text-decoration: underline;
+}
+.div-lire:hover {
+    transform: scale(1.09);
+}
 .div-image img {
     width: 100% !important;
     height: 100% !important;
@@ -162,7 +173,7 @@ input, textarea {
 }
 
 .button-form {
-    background-color: #4CAF50; 
+    background-color: rgb(6, 35, 56); 
     color: white;
     font-weight: bold;
     padding: 10px 20px;
@@ -173,7 +184,7 @@ input, textarea {
 }
 
 .button-form:hover {
-    background-color: #45a049; 
+    background-color: rgb(14, 99, 159); 
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -185,4 +196,76 @@ input, textarea {
   line-height: 1; /* Alignement vertical */
   margin-top: 2px; /* Ajuste légèrement la position vers le bas si nécessaire */
   flex-shrink: 0; /* Empêche l’icône de se réduire */
+}
+
+
+
+
+/* Modale - Overlay flou */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  text-align: center;
+  animation: slideUp 0.3s ease-out;
+}
+
+.modal img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: rgb(6, 35, 56);
+}
+
+.modal-content p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #444;
+  font-weight: bold;
+}
+
+/* Animation d'apparition */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
