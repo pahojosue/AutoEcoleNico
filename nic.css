@@ -6,7 +6,7 @@
 body {
   font-family: 'Times news roman';
   line-height: 1.5;
-  color:white;
+  color: black;
   background: beige;
 }
 h1, h2{
@@ -47,7 +47,6 @@ h2{
 .texte-banniere p {
   font-size: 2rem;
   margin-bottom: 20px;
-  text-shadow: 6px 6px 4px rgb(22, 10, 10);
   line-height: 1.5;
   text-align: center;
   color:white;
@@ -63,13 +62,14 @@ h2{
   border-radius: 40px;
   
 }
+
 .mission img {
+  overflow: hidden;
+  width: 100%;
   max-width: 500px;
   border-radius: 10px;
-  width: 100%;
-  top: 10px;
-  position: relative;
-  
+ 
+ 
 }
 
 .carousel {
@@ -79,33 +79,30 @@ h2{
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
- 
+
 }
 
 .carousel-track {
   display: flex;
-  width: calc(100% * 5); /* 5 images */
-  animation: scroll 20s steps(5) infinite;
-
+  width: calc(100% * 1); /* 5 images */
+  animation: scroll 50s steps(10) infinite;
+  gap: 10px;
 }
 
 .carousel-track img {
   width: 100%;
   flex-shrink: 0;
+  display: flex;
+  
 }
 .carousel-track:hover {
   animation-play-state: paused;
 }
 
-
-
-
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-400%); } /* -100% * (nb d'images - 1) */
 }
-
-
 
 
 .mission-text  {
@@ -167,7 +164,8 @@ font-variation-settings:
  max-width: 700px;
  position: relative;
  width: 100%;
-
+ box-shadow: 10px 8px 8px rgb(107, 21, 21);
+ overflow: hidden;
 }
 
 
@@ -180,7 +178,6 @@ font-variation-settings:
   line-height: 1.5;
   font-size: 1.4rem ;
   text-indent: 30px;
-  background: linear-gradient(to right,rgb(6,35,56),rgb(153, 153, 75),rgb(6,35,56));
   display: flex;
   align-items: center;
   gap: 10px;
@@ -200,16 +197,52 @@ font-variation-settings:
 
 
 
-.comment {
+
+.carousell {
+  overflow: hidden;
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 8%;
-  margin-bottom: 50px;
-  line-height: 1.5;
-  background:linear-gradient(to right,rgb(6,35,56),rgb(153, 153, 75),rgb(6,35,56));
+  height: 30rem ;
+  margin: auto;
+  margin-bottom: 6rem;
+  gap: 5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 100%;
 }
 
+.fond {
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.2);
+}
+
+
+
+
+
+.carousel-trackk {
+  display: flex;
+  width: calc(100% * 6); /* 5 images */
+  animation: scroll 100s linear infinite;
+
+}
+
+.carousel-trackk img {
+  width: 100%;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: 8rem;
+  border-radius: 30px;
+}
+.carousel-trackk:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-500%); } /* -100% * (nb d'images - 1) */
+}
 
 
 
