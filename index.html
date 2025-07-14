@@ -11,120 +11,489 @@
 </head>
 <body onload="fetchHeaderFooter()">
     <!--header-->
-    <div id="header"></div>
+    <!-- <div id="header"></div> -->
 
 
-         <!--  Carousel d'images -->
+         <div class="body-container">
 
-        <section class="carousel">
-            <div class="images">
-                <img src="https://i.pinimg.com/736x/f2/3a/94/f23a94f9996a83f9b166e0d086cf36b0.jpg" alt="" class="slider-item">
-                <img src="images/istockphoto-2158206767-612x612.jpg" alt="" class="slider-item">
-                <img src="https://i.pinimg.com/736x/16/80/db/1680db2f9ab524c385b16a0ac95e5988.jpg" alt="" class="slider-item">
-            </div>
-            <div class="fleches">
-                <span><i id="gauche" class="fa-solid fa-angle-left fa-2xl"></i></span>
-                <span><i id="droite"class="fa-solid fa-angle-right fa-2xl"></i></span>
-            </div>
-            <div class="slogan">
-                <p>Conduis ton avenir avec Auto-Ecole Nico !</p>
-            </div>
-            <button id="redirect">
-                <a href="#">Nos packs</a> <i class="fa-solid fa-arrow-right"></i>
-            </button>
-        </section>
-        <!-- card pour les services -->
-            <h2 class="title" align="center">NOS SERVICES & FORMATIONS </h2>
-           <div class="card-container">
-            <div class="card">
-                <img src="images/panneau.avif" alt="photo">
-                <div class="card-content">
-                    <h4>Formation au code de la route</h4>
-                    <p><i class="fa-solid fa-star"></i> Cours théorique pour apprendre les règles de circulation,
-                     les panneaux, et les priorités. <br> <br><i class="fa-solid fa-star"></i>
-                    Séances encadrées par des formateurs pour expliquer les notions complexes.</p>
-                     <a href="#" class="btn">En savoir plus</a>
+            <div class="about-us">
+                <div class="about-img">
+                    <img src="./images/train.jpg" alt="img">
+                </div>
+                
+                <div class="about-desc">
+                    <h2 class="us">A PORPOS DE NOUS</h2>
+                    <h2>Nous vous aidons  <span>à developper vos compétences en conduite</span> </h2>
+                    <p class="desc">Chez  Auto-École Nico , nous sommes convaincus que la conduite que la conduite est une compétence qui necéssite des compétences pratiques et théoriques.</p>
+                    <ul class="task">
+                        <li><i class="fa-solid fa-circle-dot"></i> Conduite sécuritaire.</li>
+                        <li><i class="fa-solid fa-circle-dot"></i> Connaissance des règles de la route.</li>
+                        <li><i class="fa-solid fa-circle-dot"></i> Préparation à l'examen d'obtention du permis.</li>
+                    </ul>
+                    <div class="phone"><i class="fa-solid fa-phone"></i> 8484879344</div>
+                    <div class="btn-us" id="more"><a href="#">En savoir plus <i class="fa-solid fa-arrow-circle-right"></i></a></div>
                 </div>
             </div>
 
-             <div class="card">
-                <img src="https://plus.unsplash.com/premium_photo-1683133959080-c34cc9fb2f73?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
-                <div class="card-content">
-                      <h4>Formations à la conduite</h4>
-                    <p class="desc"><i class="fa-solid fa-star"></i> Leçons pratiques avec un moniteur diplomé pour apprendre à conduire un véhicule <br> <br>
-                <i class="fa-solid fa-star"></i> Formation adaptée au type de permis (permis B, A, C, etc). <br> </p>
-                     <a href="#" class="btn ">En savoir plus</a>
+<!-- 1ere division -->
+
+            <div class="courses-container">
+                <div class="title">
+                    <h3 class="cs">Cours</h3>
+                    <h1 class="csp">Nos cours les plus <span>Populaires</span></h1>
                 </div>
+
+                <div class="box-courses">
+                    <!-- iiiiiiiiiiiiiiiiiiiiiiii -->
+
+                    <div class="box">
+
+                        <div class="content">
+                            <img src="./images/black.jpg" alt="">
+                            <div class="stat">
+                            <i class="fa-solid fa-layer-group"> Debutant</i>
+                            <i class="fa-solid fa-clock"> 2 semaines</i>
+                             <i class="fa-solid fa-coins"> 50 000 frs</i>
+                            </div>
+
+                            <div class="text">
+                                <h2>apprendre a conduire pas a pas</h2>
+
+                                <p class="t"> Familiariser vous avec les touches de base</p>
+                            </div>
+
+                            <div class="tuto">
+                                <div class="info">
+                                   <div class="toph"><img src="./images/instructor.jpg" alt="photo"></div>
+                                    <p class="prof"> Anna mark <br>Instructeur</p>
+                                </div>
+                            <div class="btn"><a href="#"> Details <i class="fa-solid fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="box">
+
+                        <div class="content">
+                            <img src="./images/moniteur.jpg" alt="">
+                            <div class="stat">
+                            <i class="fa-solid fa-layer-group"> Conduite supervisee</i>
+                            <i class="fa-solid fa-clock">  06 moi</i>
+                             <i class="fa-solid fa-coins"> 130 000 frs</i>
+                            </div>
+
+                            <div class="text">
+                                <h2>Conduite assistée</h2>
+
+                                <p class="t"> Fiates vous guidez par un Instructeur pour ameliorer vos compétences afin d'accroicre votre niveau.</p>
+                            </div>
+
+                            <div class="tuto">
+                                <div class="info">
+                                   <div class="toph"><img src="./images/02.jpg" alt="photo"></div>
+                                    <p class="prof"> Willy jefferson <br>Instructeur</p>
+                                </div>
+                            <div class="btn"><a href="#"> Details <i class="fa-solid fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="box">
+
+                        <div class="content">
+                            <img src="./images/young.jpg" alt="">
+                            <div class="stat">
+                            <i class="fa-solid fa-layer-group"> Conduite autonome</i>
+                            <i class="fa-solid fa-clock"> 1 an </i>
+                             <i class="fa-solid fa-coins"> 250 000 frs</i>
+                            </div>
+
+                            <div class="text">
+                                <h2>apprendre a conduire pas a pas</h2>
+
+                                <p class="t"> Niveau pour les élèves qui ont acquis une certainne autonomie en conduite et qui sont capables de conduire sans supervision directe.</p>
+                            </div>
+
+                            <div class="tuto">
+                                <div class="info">
+                                   <div class="toph"><img src="./images/wining.jpg" alt="photo"></div>
+                                    <p class="prof"> alex Fritz <br>Instructeur</p>
+                                </div>
+                            <div class="btn"><a href="#"> Details <i class="fa-solid fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <div class="box">
+
+                        <div class="content">
+                            <img src="./images/black.jpg" alt="">
+                            <div class="stat">
+                            <i class="fa-solid fa-layer-group"> Debutant</i>
+                            <i class="fa-solid fa-clock"> 2 semaines</i>
+                             <i class="fa-solid fa-coins"> 30 000 frs</i>
+                            </div>
+
+                            <div class="text">
+                                <h2>apprendre a conduire pas a pas</h2>
+
+                                <p class="t"> Lorem ipsum dolor sit amet consectetur
+                                     adipisicing elit. Eligendi accusantium earum recusandae repellendus officiis!</p>
+                            </div>
+
+                            <div class="tuto">
+                                <div class="info">
+                                   <div class="toph"><img src="./images/instructor.jpg" alt="photo"></div>
+                                    <p class="prof"> Anna mark <br>Instructor</p>
+                                </div>
+                            <div class="btn"><a href="#"> Details <i class="fa-solid fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="box">
+
+                        <div class="content">
+                            <img src="./images/black.jpg" alt="">
+                            <div class="stat">
+                            <i class="fa-solid fa-layer-group"> Debutant</i>
+                            <i class="fa-solid fa-clock"> 2 semaines</i>
+                             <i class="fa-solid fa-coins"> 30 000 frs</i>
+                            </div>
+
+                            <div class="text">
+                                <h2>apprendre a conduire pas a pas</h2>
+
+                                <p class="t"> Lorem ipsum dolor sit amet consectetur
+                                     adipisicing elit. Eligendi accusantium earum recusandae repellendus officiis!</p>
+                            </div>
+
+                            <div class="tuto">
+                                <div class="info">
+                                   <div class="toph"><img src="./images/instructor.jpg" alt="photo"></div>
+                                    <p class="prof"> Anna mark <br>Instructor</p>
+                                </div>
+                            <div class="btn"><a href="#"> Details <i class="fa-solid fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="box">
+
+                        <div class="content">
+                            <img src="./images/black.jpg" alt="">
+                            <div class="stat">
+                            <i class="fa-solid fa-layer-group"> Debutant</i>
+                            <i class="fa-solid fa-clock"> 2 semaines</i>
+                             <i class="fa-solid fa-coins"> 30 000 frs</i>
+                            </div>
+
+                            <div class="text">
+                                <h2>apprendre a conduire pas a pas</h2>
+
+                                <p class="t"> Lorem ipsum dolor sit amet consectetur
+                                     adipisicing elit. Eligendi accusantium earum recusandae repellendus officiis!</p>
+                            </div>
+
+                            <div class="tuto">
+                                <div class="info">
+                                   <div class="toph"><img src="./images/instructor.jpg" alt="photo"></div>
+                                    <p class="prof"> Anna mark <br>Instructor</p>
+                                </div>
+                            <div class="btn"><a href="#"> Details <i class="fa-solid fa-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                    
+
+                     
+                        <!-- iiiiiiiiiiiiiiiiiiiiii -->
+                </div>
+
             </div>
 
 
-            <div class="card">
-                <img src="images/moniteur.jpg" alt="photo">
-                <div class="card-content">
-                    <h4>Formation des moniteurs</h4>
-                     <p><i class="fa-solid fa-star"></i> Remise à mise niveau.
-                        <br><br> <i class="fa-solid fa-star"></i> Perfectionnement pédagogique
-                       <br> <br> <i class="fa-solid fa-star"></i> Evolution reglementé.</p>
-                     <a href="#" class="btn">En savoir plus <i class="fa-solid fa-light"></i></a>
+        <div class="statistics">
+
+                <div class="stat-item">
+
+                    <!-- <div class="blog"><img src="./icons/driving-school-2.svg" alt="icon"></div> -->
+                    <div class="stat-desc">
+                        <h2 class="hp"> + 500</h2>
+                        <p> Clients</p>
+
+                    </div>
                 </div>
+
+                <div class="stat-item">
+
+                    <!-- <div class="blog"> <img src="./icons/driving-school-3.svg" alt="icon"> </div> -->
+                    <div class="stat-desc">
+                         <h2 class="hp">+ 190</h2>
+                        <p> Membres</p>
+
+                    </div>
+                </div>
+
+                <div class="stat-item">
+
+                    <!-- <div class="blog"><img src="./icons/instructor.svg" alt="icon"></div> -->
+                    <div class="stat-desc">
+                         <h2 class="hp"> + 50</h2>
+                        <p> Moniteurs</p>
+
+                    </div>
+                </div>
+
+                <div class="stat-item">
+
+                   <!-- <div class="blog"><img src="./icons/award.svg" alt="icon"></div>  -->
+                    <div class="stat-desc">
+                         <h2 class="hp">+ 32</h2>
+                        <p> Attestations et permis</p>
+
+                    </div>
+                </div>
+
             </div>
 
-           
 
-            <div class="card">
-                <img src="images/permis de conduire.jpg" alt="photo">
-                <div class="card-content">
-                    <h4>Services administratifs</h4>
-                    <p class="desc2"><i class="fa-solid fa-star"></i> Aide à la constitution
-                    du dossier pour l'inscription au permis. <br> <br>
-                <i class="fa-solid fa-star"></i> Suivi du dossier: nous vous accompagnons dans le suivi de votre dossier et nous vous informons 
-                en temps réel sur son avancement. <br> </p>
-                     <a href="#" class="btn">En savoir plus</a>
-                </div>
+            <!-- 3e division -->
+            <div class="pricing">
+                <div class="price-h"><h3>Packs</h3></div>
+                <h1>Nos differents <span>Packs</span></h1>
             </div>
 
-             <div class="card">
-                <img src="images/istockphoto-2158206767-612x612.jpg" alt="photo">
-                <div class="card-content">
-                    <h4>Préparations aux examens</h4>
-                    <p class="desc"><i class="fa-solid fa-star"></i> Organisation de simulations d'examens pour le code et la conduite. <br> <br>
-                <i class="fa-solid fa-star"></i> Accompagnement pour l'inscription aux épreuves officielles. <br> </p>
-                     <a href="#" class="btn">En savoir plus</a>
+            <div class="price-main">
+
+                <div class="price-box">
+                    <div class="pic">
+                        <img src="./images/train.jpg" alt="">
+                        <p class="pic-text">Classique</p>
+
+                    <div class="pack">
+                    <div class="pc"> 50 000</div>
+                        <p>Premiere fois</p>
+                    </div>
+                    </div>
+
+                    <ul class="packlist">
+                        <li> ✅  20 heures de conduites.</li>
+                        <li> ✅  formation de base pour obtenir le permis de conduire.</li>
+                        <li> ✅  cours theoriques et pratiques.</li>
+                        <li> ✅  Accès à un Instructeur experimenté.</li>
+                        <li> ✅  prix compétitif et abordable.</li>
+                    </ul> 
+
+                     <div class="enroll-btn"  id="pak">
+                    <a href="#"> S'enroler maintenant <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
+                </div>
+
+
+                
+                <div class="price-box">
+                    <div class="pic">
+                        <img src="./images/card.jpg" alt="">
+                        <p class="pic-text">Commun</p>
+
+                    <div class="pack">
+                    <div class="pc"> 150 000</div>
+                       <p>Premiere fois</p>
+                    </div>
+                    </div>
+
+                    <ul class="packlist">
+                        <li> ✅  30 heures de conduites.</li>
+                        <li> ✅  Inclus les avantages du packs Classique.</li>
+                        <li> ✅  Plus de temps de conduite pour améliorerla conduite.</li>
+                        <li> ✅  Cours supplémentaires pour les situations difficiles.</li>
+                        <li> ✅  prix raisonnable et compétitif.</li>
+                    </ul> 
+
+                     <div class="enroll-btn"  id="pac">
+                    <a href="#"> S'enroler maintenant <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                </div>
+
+
+
+                
+                <div class="price-box">
+                    <div class="pic">
+                        <img src="./images/wining.jpg" alt="">
+                        <p class="pic-text">Premium</p>
+
+                    <div class="pack">
+                    <div class="pc"> 250 000</div>
+                        <p>Premiere fois</p>
+                    </div>
+                    </div>
+
+                    <ul class="packlist">
+                        <li> ✅  40 heures de conduites.</li>
+                        <li> ✅  Inclus les avantages du pack Classique et du pack Commun.</li>
+                        <li> ✅  Accès à un personnel pour des cours de conduite de conduite individualisés.</li>
+                        <li> ✅  Cours de conduite avancés pour améliorer les compétences de conduite.</li>
+                    </ul> 
+
+                     <div class="enroll-btn" id="pack">
+                   <a href="#"> S'enroler maintenant <i class="fa-solid fa-arrow-right"></i></a> 
+                </div>
+                </div>
+
+
             </div>
-           </div>
 
 
-        <!-- Carousel javascript -->
-    <script>
-        const carousel_content = document.querySelector('.images');
-        const prev = document.getElementById('gauche');
-        const next = document.getElementById('droite');
-        let translate = 0;
+        <!--Login box  -->
 
-        prev.onclick = ()=>{
-            translate += 100;
-            if(translate > 0)
-                translate = 0;
-            carousel_content.style.transform = `translate(` + translate + `%)`;
-        }
+            <div class="main-log">
+                
+                <div class="login">
+                    <div class="text-log">
+                        <h1>Inscrivez-vous sans plus tarder</h1>
+                        <p>Veuillez remplir le formulaire ci-dessous</p>
+                    </div>
 
-        next.onclick = () =>{
-            translate -= 100;
-            if(translate < -200)
-                translate = -200;
-            carousel_content.style.transform = `translate(` + translate + `%)`;
-        }
+                    <form action="">
+                        <input type="text" placeholder="Votre nom"> 
+                        <input type="number" placeholder="Votre Numero de telephone"> 
+                        <input type="email" placeholder="Votre Email"> 
 
-        // redirection vers la page d'inscription
+                        <select name="" id="">
+                            <option value="">Choisissez votre cours</option>
+                            <option value="">Conduite en ville</option>
+                            <option value="">Securite routiere</option>
+                            <option value="">Conduite de base</option>
+                        </select>
 
-        document.getElementById('redirect').addEventListener("click", function(){
-            window.location.assign("services.html")
-        })
+                        <textarea name="" id="" placeholder="Votre message"></textarea> <br>
 
-    </script>
+                        <button type="submit">Soumettre <i class="fa-solid fa-arrow-right"></i></button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- testimonials -->
+            <div class="slider">
+                <h3>Temoignages</h3>
+                <h1>Avis des <span>clients</span></h1>
+                <div class="slide">
+
+
+                <div class="card">
+                    <img src="permis.jpeg" alt="">
+                    <div class="txt">
+                        <p>Je suis vraiment satisfait par votre formation. Les instructeurs sont très professionnles et patients et les cours sont bien structurés </p>
+                    </div>
+                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                    <div class="name">
+                        <h3> Alejandro Mayer</h3>
+                    </div>
+                </div>
+
+                  <div class="card">
+                    <img src="./images/04.jpg" alt="">
+                    <div class="txt">
+                        <p>J'ai suivi la formation à l'auto-école Nico pour obtenir mon permis de conduire et je suis vraiment impressionné par la qualité de l'enseignement. </p>
+                    </div>
+                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                    <div class="name">
+                        <h3> Mickael Lin</h3>
+                    </div>
+                </div>
+
+                  <div class="card">
+                    <img src="./images/03.jpg" alt="">
+                    <div class="txt">
+                        <p>L'auto-école est une excellente école de conduite ! Les cours sont très complets et les instructeurs sont très pédagogues. J'ai appréciée la flexibilité des horaires et la disponibilité des instructeurs pour répondre à mes questions </p>
+                    </div>
+                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                    <div class="name">
+                        <h3> Jessica blink</h3>
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
+            <!-- Partenaires -->
+            <!-- <h1>Nos <span>Partenaires</span></h1>
+            <div class="company">
+                
+                <div class="cont">
+                    <img src="./icons/mitsubishi.svg" alt="">
+                    <img src="./icons/orange.svg" alt="">
+                    <img src="./icons/binance.svg" alt="">
+                    <img src="./icons/westernunion.svg" alt="">
+                    <img src="./icons/bmw.svg" alt="">
+                    <img src="./icons/yango.svg" alt="">
+                </div>
+
+                     <div class="cont">
+                    <img src="./icons/mitsubishi.svg" alt="">
+                    <img src="./icons/orange.svg" alt="">
+                    <img src="./icons/binance.svg" alt="">
+                    <img src="./icons/westernunion.svg" alt="">
+                    <img src="./icons/bmw.svg" alt="">
+                    <img src="./icons/yango.svg" alt="">
+                </div>
+
+
+               
+            </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+         </div>
 
     
-    <div id="footer"></div>
+    <!-- <div id="footer"></div> -->
+     <script>
+        const btn = document.getElementById('more');
+        btn.addEventListener("click",()=>{
+            window.location.href = "apropos.html"
+        });
+
+        const packs = document.getElementById('pack');
+        packs.addEventListener("click",()=>{
+            window.location.href = "services.html"
+        });
+
+     </script>
 </body>
 </html>
