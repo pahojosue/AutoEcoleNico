@@ -4,12 +4,97 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 /* .body-container{
     padding-bottom: 200px;
 } */
+ #header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.carousel{
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel .images{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 600px;
+    transition:  transform 0.7s ease-in-out ;
+}
+
+.carousel button{
+    position: absolute;
+    /* margin: 0 40px; */
+    top: 70%;
+    left: 40%;
+    border-radius: 20px;
+    bottom: 30px;
+    background: red;
+    height: 50px;
+    width: 150px;
+    border: none;
+    transition: .5s;
+}
+
+.carousel button:hover{
+    background: rgb(6,35,56);
+}
+
+.carousel button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.carousel button a:hover{
+    padding-left: 5px;
+}
+
+.carousel button i{
+    color: #ffff;
+}
+
+
+.slider-item{
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.fleches{
+    position: absolute;
+    width: 100%;
+    padding-left: 10px;
+    top: 300px;
+    color: rgb(227,7,19);
+    cursor: pointer;
+}
+
+#droite{
+    float: right;
+    padding-right: 20px;
+}
+
+.slogan{
+    position: absolute;
+    width: 100%;
+    top: 300px;
+    /* padding-left: 20%;
+    padding-right: 20%; */
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+} 
 
 .about-us{
     margin: 15px;
@@ -92,7 +177,7 @@
 
 .box-courses{
     display: grid;
-    grid-template-columns: repeat(3,400px);
+    grid-template-columns: repeat(3,30%);
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     padding: 15px;
@@ -111,7 +196,7 @@
 
 
 .box .content img{
-    width: 400px;
+    width: 100%;
     height: 200px;
     padding:  10px;
     border-radius: 30px;
@@ -222,6 +307,8 @@
 .pricing{
     margin-top: 20px;
     background: #fefefe;
+    padding-left: 0;
+    padding: 0px;
 }
 
 .pricing .price-h h3, h1{
@@ -234,12 +321,12 @@
 }
 .price-main{
     display: grid;
-    grid-template-columns: repeat(3,400px);
+    grid-template-columns: repeat(3,31%);
     grid-gap: 20px;
     background: #eff2f5;
     border-radius: 15px;
-    margin-left: 10px;
-    padding: 30px;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 .price-main .price-box{
@@ -260,7 +347,7 @@
     position: relative;
 }
 .price-box .pic img{
-    width: 400px;
+    width: 100%;
     height: 300px;
     padding: 10px;
     border-radius: 15px;
@@ -336,7 +423,7 @@
     background:rgb(51, 92, 109);
     width: 450px;
     height: 100%;
-    margin-left: 800px;
+    margin-left: 64%;
 }
 .text-log{
     padding: 15px;
